@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  border: 3px solid yellowgreen;
+  width: 380px;
+  padding: 0px 20px;
+  font-family: "Open Sans", sans-serif;
+  margin: 30px 30px;
+}
+
+.header,
+.now-playing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  padding: 0;
+}
+
+.header_column {
+  width: 33%;
+}
+
+.header_column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+
+.header_column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header_column h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.now-playing_column {
+  padding: 0px 5px;
+  font-size: 20px;
+}
+
+.now-playing_album {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border: 3px solid black;
+  background-color: rgb(253, 186, 0);
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.now-playing_column h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.play-button {
+  display: flex;
+  flex: auto;
+}
+
+.play-button_column {
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 10px;
+}
+
+.play-button .play-button_column:nth-child(1) {
+  border: 2px solid black;
+  border-radius: 10px;
+  flex-grow: 2;
+  box-shadow: 0px 3px;
+}
+
+.play-button .play-button_column:nth-child(2),
+.play-button .play-button_column:nth-child(3) {
+  flex-grow: 1;
+}
+
+.heart,
+.plus {
+  width: 53px;
+  display: inline-block;
+  border: 2px solid black;
+  border-radius: 50%;
+  box-shadow: 0px 3px;
+}
+
+.music-list_column {
+  display: flex;
+  align-content: center;
+  margin: 30px 0px;
+}
+
+.music-list_album {
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.music-list_song {
+  line-height: 25px;
+}
+
+.music-list_song h2 {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.music-list .music-list_column:nth-child(1) .music-list_album {
+  background-color: tomato;
+}
+
+.music-list .music-list_column:nth-child(2) .music-list_album {
+  background-color: pink;
+}
+
+.music-list .music-list_column:nth-child(3) .music-list_album {
+  background-color: blue;
+}
+
+.music-list .music-list_column:nth-child(4) .music-list_album {
+  background-color: aquamarine;
+}

@@ -1,0 +1,87 @@
+.nav {
+  background-color: #f9f9fa;
+  padding: 20px 50px;
+  border-top: 1px solid rgba(121, 121, 121, 0.3);
+  position: fixed;
+  bottom: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.nav_list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_link {
+  color: #2e363e;
+  text-decoration: none;
+  position: relative;
+}
+
+@keyframes appearBtnAnimation{
+  from{
+    opacity: 0;
+  }
+  to{
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.nav_btn {
+  transform: translateY(80px);
+  animation: appearBtnAnimation 0.5s ease-in-out forwards;
+  opacity:0;
+}
+
+.nav_btn:nth-child(2){
+  animation-delay: 0.2s;
+}
+
+.nav_btn:nth-child(3){
+  animation-delay: 0.4s;
+}
+
+.nav_btn:last-child{
+  animation-delay: 0.6s;
+}
+
+.nav_notification {
+  background-color: tomato;
+  width: 25px;
+  height: 25px;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  animation : notificationAnimation 2s ease-in-out infinite;
+}
+
+.nav_point {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  background-color: tomato;
+  bottom: 25px;
+  left: 30px;
+}
+
+@keyframes notificationAnimation{
+  0%{
+    transform:none;
+  }
+  50%{
+    transform: translateY(-5px) rotateY(360deg);
+  }
+  100%{
+    transform: none;
+  }
+}

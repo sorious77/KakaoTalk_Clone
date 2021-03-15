@@ -1,0 +1,75 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column;
+  font-size: 100px;
+  background-color: plum;
+}
+
+#dots {
+  animation: rotateDots 1s 1s infinite;
+  display: flex;
+  margin-bottom: 200px;
+}
+
+#dot {
+  border: 10px solid white;
+  border-radius: 50%;
+  margin: 0 10px 0 10px;
+}
+
+@keyframes rotateDots {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+#rectangles {
+  display: flex;
+}
+
+#rectangle {
+  height: 60px;
+  width: 0px;
+  border: 10px solid white;
+  margin: 0 10px 0 10px;
+}
+
+.first {
+  animation: sizeUpRect 1s 0.1s infinite;
+}
+
+.second {
+  animation: sizeUpRect 1s 0.2s infinite;
+}
+
+.third {
+  animation: sizeUpRect 1s 0.3s infinite;
+}
+
+.fourth {
+  animation: sizeUpRect 1s 0.4s infinite;
+}
+
+.fifth {
+  animation: sizeUpRect 1s 0.5s infinite;
+}
+
+@keyframes sizeUpRect {
+  0% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(2);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}

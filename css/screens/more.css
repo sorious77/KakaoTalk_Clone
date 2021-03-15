@@ -1,0 +1,42 @@
+.more-screen .icon-row{
+    margin:35px 0;
+}
+
+.more-suggestion {
+    margin-top: 15px;
+    border-top: var(--main-border);
+    padding-top: 40px;
+}
+
+.more-suggestion h4{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.more-suggestion_icons{
+    display: flex;
+}
+
+.more-suggestion_icon{
+    margin-right: 40px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.more-suggestion_icon-image{
+    width: 60px;
+    height: 60px;
+    background-color: var(--pink);
+    border-radius: 15px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.more-suggestion_icon-image i{
+    font-size: 28px;
+    color:white;
+}

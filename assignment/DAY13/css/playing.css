@@ -1,0 +1,42 @@
+.playing {
+  margin-top: 40px;
+  font-weight: 600;
+}
+
+.playing h1 {
+  font-size: 35px;
+  margin: 15px 0;
+}
+
+.playing h3 {
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.playing-info_time {
+  margin: 40px 10% 10px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+}
+
+.playing-info_range {
+  -webkit-appearance: none;
+  width: 85%;
+  color: black;
+}
+
+.playing-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+  margin-top: 70px;
+  font-size: 30px;
+}
+
+.icon-gray {
+  color: gray;
+}

@@ -1,0 +1,32 @@
+.music-bar {
+  display: flex;
+  height: 80px;
+  margin: 10px 10px;
+  padding: 5px 35px;
+  align-items: center;
+  border-radius: 50px;
+  justify-content: space-between;
+}
+
+.music-bar_info {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  justify-content: center;
+}
+
+.music-bar_artist {
+  color: rgba(255, 255, 255, 0.6);
+  padding-bottom: 5px;
+}
+
+.music-bar_title {
+  font-size: 20px;
+}
+
+.music-bar_control {
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+  align-items: center;
+}
